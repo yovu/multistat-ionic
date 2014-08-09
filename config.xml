@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.ionicframework.multistat777331" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>multistat</name>
+<widget id="com.yovu.multistat" version="0.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>MultiStat</name>
   <description>
-        An Ionic Framework and Cordova project.
+        A simple stats app for the alternate cryto-currency mining site Multipool.us
     </description>
-  <author email="hi@ionicframework" href="http://ionicframework.com/">
-      Ionic Framework Team
+  <author email="info@yovu.co" href="http://yovu.co">
+      Yovu Team
     </author>
   <content src="index.html"/>
   <access origin="*"/>
+  <preference name="Fullscreen" value="true"/>
+  <preference name="Orientation" value="portrait"/>
   <preference name="webviewbounce" value="false"/>
   <preference name="UIWebViewBounce" value="false"/>
   <preference name="DisallowOverscroll" value="true"/>

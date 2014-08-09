@@ -1,0 +1,20 @@
+/Users/dan/Code/ionic/multistat/platforms/android/ant-build/classes.dex : \
+/Users/dan/Code/ionic/multistat/platforms/android/ant-build/classes/com/ionic/keyboard/IonicKeyboard$1.class \
+/Users/dan/Code/ionic/multistat/platforms/android/ant-build/classes/com/ionic/keyboard/IonicKeyboard$2.class \
+/Users/dan/Code/ionic/multistat/platforms/android/ant-build/classes/com/ionic/keyboard/IonicKeyboard.class \
+/Users/dan/Code/ionic/multistat/platforms/android/ant-build/classes/com/ionicframework/multistat777331/BuildConfig.class \
+/Users/dan/Code/ionic/multistat/platforms/android/ant-build/classes/com/ionicframework/multistat777331/multistat.class \
+/Users/dan/Code/ionic/multistat/platforms/android/ant-build/classes/com/ionicframework/multistat777331/R$attr.class \
+/Users/dan/Code/ionic/multistat/platforms/android/ant-build/classes/com/ionicframework/multistat777331/R$drawable.class \
+/Users/dan/Code/ionic/multistat/platforms/android/ant-build/classes/com/ionicframework/multistat777331/R$string.class \
+/Users/dan/Code/ionic/multistat/platforms/android/ant-build/classes/com/ionicframework/multistat777331/R$xml.class \
+/Users/dan/Code/ionic/multistat/platforms/android/ant-build/classes/com/ionicframework/multistat777331/R.class \
+/Users/dan/Code/ionic/multistat/platforms/android/ant-build/classes/com/yovu/multistat/BuildConfig.class \
+/Users/dan/Code/ionic/multistat/platforms/android/ant-build/classes/com/yovu/multistat/multistat.class \
+/Users/dan/Code/ionic/multistat/platforms/android/ant-build/classes/com/yovu/multistat/R$attr.class \
+/Users/dan/Code/ionic/multistat/platforms/android/ant-build/classes/com/yovu/multistat/R$drawable.class \
+/Users/dan/Code/ionic/multistat/platforms/android/ant-build/classes/com/yovu/multistat/R$string.class \
+/Users/dan/Code/ionic/multistat/platforms/android/ant-build/classes/com/yovu/multistat/R$xml.class \
+/Users/dan/Code/ionic/multistat/platforms/android/ant-build/classes/com/yovu/multistat/R.class \
+/Users/dan/Code/ionic/multistat/platforms/android/ant-build/classes/org/apache/cordova/device/Device.class \
+/Users/dan/Code/ionic/multistat/platforms/android/ant-build/dexedLibs/classes-33dc117cc8b0c702f6a9dcd44c535e58.jar \
