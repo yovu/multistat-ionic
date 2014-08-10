@@ -1,0 +1,17 @@
+2014-08-09 19:53:49.041 MultiStat[5138:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-09 19:53:50.061 MultiStat[5138:70b] Unlimited access to network resources
+2014-08-09 19:53:54.197 MultiStat[5138:70b] [CDVTimer][keyboard] 0.744998ms
+2014-08-09 19:53:54.198 MultiStat[5138:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-08-09 19:53:54.198 MultiStat[5138:70b] [CDVTimer][statusbar] 0.376999ms
+2014-08-09 19:53:54.198 MultiStat[5138:70b] [CDVTimer][TotalPluginStartup] 2.022982ms
+2014-08-09 19:53:55.548 MultiStat[5138:70b] Resetting plugins due to page load.
+2014-08-09 19:53:57.916 MultiStat[5138:70b] Finished load of: file:///Users/dan/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/EBAF86F3-FB77-4144-AAA2-62C3C8800952/MultiStat.app/www/index.html#/app/playlists
+2014-08-09 19:53:59.434 MultiStat[5138:70b] Received memory warning.
+2014-08-09 19:55:42.132 MultiStat[5412:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-09 19:55:42.162 MultiStat[5412:70b] Unlimited access to network resources
+2014-08-09 19:55:42.206 MultiStat[5412:70b] [CDVTimer][keyboard] 0.118971ms
+2014-08-09 19:55:42.207 MultiStat[5412:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-08-09 19:55:42.207 MultiStat[5412:70b] [CDVTimer][statusbar] 0.563979ms
+2014-08-09 19:55:42.208 MultiStat[5412:70b] [CDVTimer][TotalPluginStartup] 1.877010ms
+2014-08-09 19:55:42.368 MultiStat[5412:70b] Resetting plugins due to page load.
+2014-08-09 19:55:42.753 MultiStat[5412:70b] Finished load of: file:///Users/dan/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/EBAF86F3-FB77-4144-AAA2-62C3C8800952/MultiStat.app/www/index.html#/app/playlists
