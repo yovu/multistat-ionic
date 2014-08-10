@@ -14,6 +14,9 @@
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <script src="https://cdn.firebase.com/js/client/1.0.18/firebase.js"></script>
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
@@ -21,6 +24,21 @@
     <!-- your app's js -->
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
+
+    <script type="text/javascript">
+        var getFire = new Firebase("https://multistat.firebaseio.com/");
+
+        getFire.child("411639a04849a8a9cd2c3da637f313de5e60203abb94ef8a0e69f6127adb91d6").on("value", function(data) {
+            data = data.val();
+
+            console.log(data.currency);
+
+            $.each( data.currency, function( key, value ) {
+                console.log(value.confirmed_rewards);
+                $( ".balance .list" ).append('<ion-item nav-clear menu-close class="item"><img src="https://en.bitcoin.it/w/images/en/2/29/BC_Logo_.png" style="width: 44px;"> <h3>0.0000468070917350</h3></ion-item>');
+            });
+        });
+    </script>
   </head>
 
   <body ng-app="starter" class="platform-ios platform-cordova platform-webview">

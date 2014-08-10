@@ -35,7 +35,7 @@
 
             $.each( data.currency, function( key, value ) {
                 console.log(value.confirmed_rewards);
-                $( ".balance" ).append('<ion-item nav-clear="" menu-close="" ng-click="login()" class="item"><img src="https://en.bitcoin.it/w/images/en/2/29/BC_Logo_.png" style="width: 44px;"> <h3>0.0000468070917350</h3></ion-item>');
+                $( ".balance .list" ).append('<ion-item nav-clear menu-close class="item"><img src="img/coins/'+value.currency+'.png" style="width: 44px;"> <h3>'+value.confirmed_rewards+'</h3></ion-item>');
             });
         });
     </script>
