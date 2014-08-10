@@ -14,7 +14,7 @@
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 
     <script src="https://cdn.firebase.com/js/client/1.0.18/firebase.js"></script>
 
@@ -35,7 +35,7 @@
 
             $.each( data.currency, function( key, value ) {
                 console.log(value.confirmed_rewards);
-                $( ".balance .list" ).append('<ion-item nav-clear menu-close class="item"><img src="img/coins/'+value.currency+'.png" style="width: 44px;"> <h3>'+value.confirmed_rewards+'</h3></ion-item>');
+                $( ".balance .list" ).append('<ion-item nav-clear menu-close class="item"><img src="img/coins/'+value.currency+'.png" style="width: 44px;"> <h3><span>'+value.currency+'</span><br>'+value.confirmed_rewards+'</h3></ion-item>');
             });
         });
     </script>
