@@ -31,10 +31,7 @@
         getFire.child("411639a04849a8a9cd2c3da637f313de5e60203abb94ef8a0e69f6127adb91d6").on("value", function(data) {
             data = data.val();
 
-            console.log(data.currency);
-
             $.each( data.currency, function( key, value ) {
-                console.log(value.confirmed_rewards);
                 $( ".balance .list" ).append('<ion-item nav-clear menu-close class="item"><img src="img/coins/'+value.currency+'.png" style="width: 44px;"> <h3><span>'+value.currency+'</span><br>'+value.confirmed_rewards+'</h3></ion-item>');
             });
         });
