@@ -23,8 +23,6 @@ angular.module('starter.controllers', [])
     });
   });
 
-  console.log('hello');
-
 })
 
 .controller('PlaylistsCtrl', function($scope) {
