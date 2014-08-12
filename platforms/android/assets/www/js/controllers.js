@@ -11,17 +11,25 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('AppCtrl', function($scope, $timeout, $state) {
+.controller('AppCtrl', function($scope, $timeout, $state, $firebase) {
 
-  var getFire = new Firebase("https://multistat.firebaseio.com/");
+  var currencies = new Firebase("https://multistat.firebaseio.com/411639a04849a8a9cd2c3da637f313de5e60203abb94ef8a0e69f6127adb91d6/currency");
+  var currencies = $firebase(currencies);
 
-  getFire.child("411639a04849a8a9cd2c3da637f313de5e60203abb94ef8a0e69f6127adb91d6").on("value", function(data) {
-    data = data.val();
+  $scope.currencies = currencies.$asArray();
 
-    $.each( data.currency, function( key, value ) {
-      $( ".balance .list" ).append('<ion-item nav-clear menu-close class="item"><img src="img/coins/'+value.currency+'.png" style="width: 44px;"> <h3><span>'+value.currency+'</span><br>'+value.confirmed_rewards+'</h3></ion-item>');
-    });
-  });
+  console.log($scope.currencies);
+
+
+  //getFire.child("411639a04849a8a9cd2c3da637f313de5e60203abb94ef8a0e69f6127adb91d6").on("value", function(data) {
+  //  data = jQuery.parseJSON(data.val());
+  //  console.log(data);
+
+  //  $.each( data.currency, function( key, value ) {
+  //    console.log(value);
+  //  //  $( ".balance .list" ).append('<ion-item nav-clear menu-close class="item"><img src="img/coins/'+value.currency+'.png" style="width: 44px;"> <h3><span>'+value.currency+'</span><br>'+value.confirmed_rewards+'</h3></ion-item>');
+  //  });
+  //});
 
 })
 

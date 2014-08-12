@@ -83,7 +83,6 @@
 /Users/dan/Code/ionic/multistat/platforms/android/assets/www/img/coins/zet.png \
 /Users/dan/Code/ionic/multistat/platforms/android/assets/www/js/app.js \
 /Users/dan/Code/ionic/multistat/platforms/android/assets/www/js/controllers.js \
-/Users/dan/Code/ionic/multistat/platforms/android/assets/www/js/services.js \
 /Users/dan/Code/ionic/multistat/platforms/android/assets/www/lib/angular \
 /Users/dan/Code/ionic/multistat/platforms/android/assets/www/lib/angular-animate \
 /Users/dan/Code/ionic/multistat/platforms/android/assets/www/lib/angular-sanitize \

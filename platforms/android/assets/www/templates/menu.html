@@ -2,7 +2,7 @@
 
   <ion-pane ion-side-menu-content>
     <ion-nav-bar class="bar-stable nav-title-slide-ios7">
-      
+
     </ion-nav-bar>
     <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
   </ion-pane>
@@ -13,7 +13,12 @@
     </header>
     <ion-content class="has-header">
       <ion-list class="balance">
-
+        <ion-item nav-clear ng-repeat="currency in currencies">
+          <img src="img/coins/{{currency.currency}}.png" style="width: 44px;">
+            <h3>
+              <span>{{currency.currency}}</span><br>{{currency.confirmed_rewards}}
+            </h3>
+        </ion-item>
       </ion-list>
     </ion-content>
   </ion-side-menu>

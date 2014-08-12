@@ -5,5 +5,16 @@
   <ion-content class="has-header">
     <h1>Multistat</h1>
 
+
+
+    <ion-list class="balance">
+      <ion-item nav-clear menu-close ng-repeat="currency in currencies">
+        <img src="img/coins/{{currency.currency}}.png" style="width: 44px;">
+          <h3>
+            <span>{{currency.currency}}</span><br>{{currency.confirmed_rewards}}
+          </h3>
+      </ion-item>
+    </ion-list>
+
   </ion-content>
 </ion-view>
