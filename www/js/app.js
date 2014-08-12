@@ -23,6 +23,12 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
 
+    .state('login', {
+      url: "/login",
+      templateUrl: "templates/login.html",
+      controller: 'LoginCtrl'
+    })
+
     .state('app', {
       url: "/app",
       abstract: true,
@@ -43,10 +49,12 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: "/home",
       views: {
         'menuContent' :{
-          templateUrl: "templates/home.html"
+          templateUrl: "templates/home.html",
+          controller: 'HomeCtrl'
         }
       }
     })
+
     .state('app.playlists', {
       url: "/playlists",
       views: {
@@ -67,6 +75,9 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/home');
+  if (localStorage.getItem("local_api_key") === null) {
+    $urlRouterProvider.otherwise('/login');
+  } else {
+    $urlRouterProvider.otherwise('/app/home');
+  }
 });
-
