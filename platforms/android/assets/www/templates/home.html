@@ -3,18 +3,17 @@
     <button menu-toggle="left"class="button button-icon icon ion-navicon"></button>
   </ion-nav-buttons>
   <ion-content class="has-header">
-    <h1>Multistat</h1>
 
+    <div class="item item-divider">
+      Active Workers
+    </div>
 
-
-    <ion-list class="balance">
-      <ion-item nav-clear menu-close ng-repeat="currency in currencies">
-        <img src="img/coins/{{currency.currency}}.png" style="width: 44px;">
-          <h3>
-            <span>{{currency.currency}}</span><br>{{currency.confirmed_rewards}}
-          </h3>
-      </ion-item>
-    </ion-list>
+    <div class="list" ng-repeat="worker in workers">
+      <a class="item item-avatar">
+        <h2>{{worker.coin}} - {{worker.worker}}</h2>
+        <p>hashrate: {{worker.hashrate}}</p>
+      </a>
+    </div>
 
   </ion-content>
 </ion-view>

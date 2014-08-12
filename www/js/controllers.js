@@ -13,12 +13,16 @@ angular.module('starter.controllers', [])
 
 .controller('AppCtrl', function($scope, $timeout, $state, $firebase) {
 
-  var currencies = new Firebase("https://multistat.firebaseio.com/411639a04849a8a9cd2c3da637f313de5e60203abb94ef8a0e69f6127adb91d6/currency");
+  var currencies = new Firebase("https://multistat.firebaseio.com/users/411639a04849a8a9cd2c3da637f313de5e60203abb94ef8a0e69f6127adb91d6/currency");
   var currencies = $firebase(currencies);
 
   $scope.currencies = currencies.$asArray();
 
-  console.log($scope.currencies);
+  var workers = new Firebase("https://multistat.firebaseio.com/users/411639a04849a8a9cd2c3da637f313de5e60203abb94ef8a0e69f6127adb91d6/workers");
+  var workers = $firebase(workers);
+
+  $scope.workers = workers.$asArray();
+
 
 
   //getFire.child("411639a04849a8a9cd2c3da637f313de5e60203abb94ef8a0e69f6127adb91d6").on("value", function(data) {
