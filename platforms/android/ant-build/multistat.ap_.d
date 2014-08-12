@@ -83,6 +83,7 @@
 /Users/dan/Code/ionic/multistat/platforms/android/assets/www/img/coins/zet.png \
 /Users/dan/Code/ionic/multistat/platforms/android/assets/www/js/app.js \
 /Users/dan/Code/ionic/multistat/platforms/android/assets/www/js/controllers.js \
+/Users/dan/Code/ionic/multistat/platforms/android/assets/www/js/services.js \
 /Users/dan/Code/ionic/multistat/platforms/android/assets/www/lib/angular \
 /Users/dan/Code/ionic/multistat/platforms/android/assets/www/lib/angular-animate \
 /Users/dan/Code/ionic/multistat/platforms/android/assets/www/lib/angular-sanitize \
@@ -200,7 +201,7 @@
 /Users/dan/Code/ionic/multistat/platforms/android/assets/www/plugins/com.ionic.keyboard/www/keyboard.js \
 /Users/dan/Code/ionic/multistat/platforms/android/assets/www/plugins/org.apache.cordova.device/www \
 /Users/dan/Code/ionic/multistat/platforms/android/assets/www/plugins/org.apache.cordova.device/www/device.js \
-/Users/dan/Code/ionic/multistat/platforms/android/assets/www/templates/browse.html \
+/Users/dan/Code/ionic/multistat/platforms/android/assets/www/templates/home.html \
 /Users/dan/Code/ionic/multistat/platforms/android/assets/www/templates/login.html \
 /Users/dan/Code/ionic/multistat/platforms/android/assets/www/templates/menu.html \
 /Users/dan/Code/ionic/multistat/platforms/android/assets/www/templates/playlist.html \

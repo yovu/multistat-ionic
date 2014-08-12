@@ -16,10 +16,12 @@ angular.module('starter.controllers', [])
   var getFire = new Firebase("https://multistat.firebaseio.com/");
 
   getFire.child("411639a04849a8a9cd2c3da637f313de5e60203abb94ef8a0e69f6127adb91d6").on("value", function(data) {
-    data = data.val();
+    data = jQuery.parseJSON(data.val());
+    console.log(data);
 
     $.each( data.currency, function( key, value ) {
-      $( ".balance .list" ).append('<ion-item nav-clear menu-close class="item"><img src="img/coins/'+value.currency+'.png" style="width: 44px;"> <h3><span>'+value.currency+'</span><br>'+value.confirmed_rewards+'</h3></ion-item>');
+      console.log(value);
+    //  $( ".balance .list" ).append('<ion-item nav-clear menu-close class="item"><img src="img/coins/'+value.currency+'.png" style="width: 44px;"> <h3><span>'+value.currency+'</span><br>'+value.confirmed_rewards+'</h3></ion-item>');
     });
   });
 
