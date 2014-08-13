@@ -13,5 +13,33 @@
 
 .item h3 {
 	float: left;
-	margin: 15px 0px 0px 20px;
+	margin: 7px 0px 0px 20px;
+}
+
+.item h3 span {
+	text-transform: uppercase;
+}
+
+.currently-mining {
+	overflow: hidden;
+}
+
+.currently-mining .card {
+	width: 43%;
+	text-align: center;
+	float: left;
+	margin: 15px 10px 0px 10px;
+}
+
+.currently-mining .card .item {
+	padding: 8px;
+}
+
+.currently-mining .card .item h3 {
+	float: none;
+	margin: 0px 0px 0px 0px;
+}
+
+.currently-mining .card .item h1 {
+
 }

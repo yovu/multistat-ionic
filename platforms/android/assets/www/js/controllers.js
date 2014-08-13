@@ -23,6 +23,13 @@ angular.module('starter.controllers', [])
 
   $scope.workers = workers.$asArray();
 
+  var mining = new Firebase("https://multistat.firebaseio.com/users/411639a04849a8a9cd2c3da637f313de5e60203abb94ef8a0e69f6127adb91d6/mining");
+  var mining = $firebase(mining);
+  var mining = mining.$asObject();
+
+  $scope.mining = mining;
+
+
 
 
   //getFire.child("411639a04849a8a9cd2c3da637f313de5e60203abb94ef8a0e69f6127adb91d6").on("value", function(data) {

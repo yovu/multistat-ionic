@@ -5,11 +5,47 @@
   <ion-content class="has-header">
 
     <div class="item item-divider">
+      Currently Mining
+    </div>
+
+    <div class="list currently-mining">
+      
+      <div class="card">
+        <div class="item item-text-wrap">
+          <h3>scrypt</h3>
+          <h1>{{mining.scrypt || 'n/a'}}</h1>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="item item-text-wrap">
+          <h3>scrypt-n</h3>
+          <h1>{{mining.scrypt_n || 'n/a'}}</h1>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="item item-text-wrap">
+          <h3>sha-256</h3>
+          <h1>{{mining.sha_256 || 'n/a'}}</h1>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="item item-text-wrap">
+          <h3>x11</h3>
+          <h1>{{mining.x11 || 'n/a'}}</h1>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="item item-divider">
       Active Workers
     </div>
 
-    <div class="list" ng-repeat="worker in workers">
-      <a class="item item-avatar">
+    <div class="list">
+      <a class="item item-avatar" ng-repeat="worker in workers">
         <h2>{{worker.coin}} - {{worker.worker}}</h2>
         <p>hashrate: {{worker.hashrate}}</p>
       </a>

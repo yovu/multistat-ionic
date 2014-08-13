@@ -1,36 +1,40 @@
 angular.module('starter.controllers', [])
 
-.controller('AppCtrl', function($scope, $ionicModal, $timeout) {
-  // Form data for the login modal
+.controller('LoginCtrl', function($scope, $state) {
+
   $scope.loginData = {};
 
-  // Create the login modal that we will use later
-  $ionicModal.fromTemplateUrl('templates/login.html', {
-    scope: $scope
-  }).then(function(modal) {
-    $scope.modal = modal;
-  });
-
-  // Triggered in the login modal to close it
-  $scope.closeLogin = function() {
-    $scope.modal.hide();
-  },
-
-  // Open the login modal
-  $scope.login = function() {
-    $scope.modal.show();
+  $scope.signIn = function(user) {
+    console.log('Sign-In', user);
+    $state.go('app.home');
   };
 
-  // Perform the login action when the user submits the login form
-  $scope.doLogin = function() {
-    console.log('Doing login', $scope.loginData);
+})
 
-    // Simulate a login delay. Remove this and replace with your login
-    // code if using a login system
-    $timeout(function() {
-      $scope.closeLogin();
-    }, 1000);
-  };
+.controller('AppCtrl', function($scope, $timeout, $state, $firebase) {
+
+  var currencies = new Firebase("https://multistat.firebaseio.com/users/411639a04849a8a9cd2c3da637f313de5e60203abb94ef8a0e69f6127adb91d6/currency");
+  var currencies = $firebase(currencies);
+
+  $scope.currencies = currencies.$asArray();
+
+  var workers = new Firebase("https://multistat.firebaseio.com/users/411639a04849a8a9cd2c3da637f313de5e60203abb94ef8a0e69f6127adb91d6/workers");
+  var workers = $firebase(workers);
+
+  $scope.workers = workers.$asArray();
+
+
+
+  //getFire.child("411639a04849a8a9cd2c3da637f313de5e60203abb94ef8a0e69f6127adb91d6").on("value", function(data) {
+  //  data = jQuery.parseJSON(data.val());
+  //  console.log(data);
+
+  //  $.each( data.currency, function( key, value ) {
+  //    console.log(value);
+  //  //  $( ".balance .list" ).append('<ion-item nav-clear menu-close class="item"><img src="img/coins/'+value.currency+'.png" style="width: 44px;"> <h3><span>'+value.currency+'</span><br>'+value.confirmed_rewards+'</h3></ion-item>');
+  //  });
+  //});
+
 })
 
 .controller('PlaylistsCtrl', function($scope) {
@@ -45,4 +49,8 @@ angular.module('starter.controllers', [])
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
+})
+
+.controller('HomeCtrl', function($scope, $stateParams) {
+
 })
